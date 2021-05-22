@@ -13,7 +13,7 @@ public class DelayStdAction extends ActionElementBase {
 		String strAni = data.getAni();
 		if(strAni.equalsIgnoreCase("NA") ) {
 			data.addToLog("No ani received", "");
-			data.logWarning("Ani does not exists, Setting session data AreaCode to NA");
+			data.logWarning("Ani does not exists, Setting session data AreaCode too NA");
 		} else {
 			data.addToLog("The ani is", strAni);			
 			strAreaCode = strAni.substring(0, 3);
